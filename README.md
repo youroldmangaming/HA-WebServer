@@ -82,3 +82,20 @@ backend http_back
 userlist users
     user youruser password $2y$ # Ensure this hash matches the password
 ```
+### Explanation:
+- **Global and Defaults Sections**: Configure logging and timeouts.
+- **Frontend Section**: Listens on port 81 and requires authentication.
+- **Backend Section**: Defines the backend servers for load balancing.
+- **Userlist Section**: Defines the user and hashed password for basic authentication.
+
+## Step 4: Accessing the Service
+
+To access the HAProxy service, navigate to:
+
+http://<your-server-ip>:8080
+
+You will be prompted to enter the username and password defined in the `userlist`.
+
+## Conclusion
+
+This setup provides a scalable and secure way to manage multiple NGINX instances behind an HAProxy reverse proxy with basic authentication. If you encounter any issues, check the HAProxy logs for more information.

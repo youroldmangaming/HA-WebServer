@@ -15,7 +15,7 @@ This document outlines the setup of an HAProxy service that acts as a reverse pr
 
 ## Step 1: Create HAProxy Service
 
-Run 
+Run createCredentials.sh from the repository, the output with be the htpasswd file to be included in the following commands.
 
 
 To create the HAProxy service, run the following Docker command:

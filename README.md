@@ -9,10 +9,14 @@ This document outlines the setup of an HAProxy service that acts as a reverse pr
 ### Prerequisites
 
 - Docker installed on your server.
+- Docker Swarm is initiated and each target node (in my instance there are five nodes) within the cluster has joined 
 - Basic knowledge of Docker commands and configuration files.
 - KeepAlived is set up across the cluster.
 
 ## Step 1: Create HAProxy Service
+
+Run 
+
 
 To create the HAProxy service, run the following Docker command:
 

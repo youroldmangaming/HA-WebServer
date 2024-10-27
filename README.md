@@ -86,7 +86,7 @@ userlist users
 - **Global and Defaults Sections**: Configure logging and timeouts.
 - **Frontend Section**: Listens on port 81 and requires authentication.
 - **Backend Section**: Defines the backend servers for load balancing.
-- **Userlist Section**: Defines the user and hashed password for basic authentication.
+- **Userlist Section**: Defines the user and hashed password for basic authentication(found in the generated htpasswd file).
 
 ## Step 4: Accessing the Service
 

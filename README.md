@@ -96,6 +96,18 @@ http://<your-server-ip>:8080
 
 You will be prompted to enter the username and password defined in the `userlist`.
 
+### Some Useful Commands
+docker service update --force nginx-service
+docker service ps nginx-service
+docker service update --mount-rm  /home/rpi/clusterfs/www.youroldmangaming.com/html/ nginx-service
+docker service inspect nginx-service --pretty
+docker service ls
+docker service logs nginx-service
+
+
+
+
+
 ## Conclusion
 
 This setup provides a scalable and secure way to manage multiple NGINX instances behind an HAProxy reverse proxy with basic authentication. If you encounter any issues, check the HAProxy logs for more information.

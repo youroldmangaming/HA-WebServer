@@ -96,13 +96,18 @@ http://<your-server-ip>:8080
 
 You will be prompted to enter the username and password defined in the `userlist`.
 
-### Some Useful Commands
-docker service update --force nginx-service
-docker service ps nginx-service
-docker service update --mount-rm  /home/rpi/clusterfs/www.youroldmangaming.com/html/ nginx-service
-docker service inspect nginx-service --pretty
-docker service ls
-docker service logs nginx-service
+### Some Useful Commands:
+- **docker service update --force nginx-service
+
+- **docker service ps nginx-service
+
+- **docker service update --mount-rm  /home/rpi/clusterfs/www.youroldmangaming.com/html/ nginx-service
+
+- **docker service inspect nginx-service --pretty
+
+- **docker service ls
+
+- **docker service logs nginx-service
 
 
 
